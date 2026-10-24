@@ -1,8 +1,6 @@
-<p align="center">
-  <img src="assets/project-cover.svg" alt="Milan — Voice AI, conversation orchestration and workflow automation" width="100%">
-</p>
 
-<h1 align="center">Milan · AI Voice Agent for Payment Resolution</h1>
+
+<h1 align="center"> AI Voice Agent for Payment Resolution</h1>
 
 <p align="center">
   <strong>ElevenLabs conversation workflows · n8n automation · external calculation tools</strong><br>
@@ -21,7 +19,7 @@
 
 ## The project
 
-I built Milan to handle structured payment conversations while keeping confidential case information, calculation tools and operational follow-up within clearly defined boundaries.
+I built this system to handle structured payment conversations while keeping confidential case information, calculation tools and operational follow-up within clearly defined boundaries.
 
 The interesting engineering problem is maintaining a useful conversation across changing situations: an unclear identity, a question about a case, a payment proposal, a document request, or a request to speak with an employee. Each situation needs an appropriate next step, and the conversation must retain what has already been established.
 
