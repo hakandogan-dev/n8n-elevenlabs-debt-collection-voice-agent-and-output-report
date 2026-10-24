@@ -1,0 +1,120 @@
+{
+  "name": "PUBLIC SCAFFOLD - Post-call reporting",
+  "nodes": [
+    {
+      "id": "public-report-input",
+      "name": "Input - configure locally",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        100
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "public-report-filter",
+      "name": "Event filter - configure locally",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        250,
+        100
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "public-report-sheet",
+      "name": "Report destination - configure locally",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        500,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "public-report-email",
+      "name": "Internal notification - configure locally",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        750,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "public-report-ignore",
+      "name": "Ignore other events",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        500,
+        240
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "public-report-note",
+      "name": "Public scaffold notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -180
+      ],
+      "parameters": {
+        "content": "## Public portfolio scaffold\nRelevant post-call event -> reporting sheet -> internal email. Other branch -> no-op.\n\nAll operational parameters are empty. No event condition, column mapping, destination, recipient, credentials, message template or execution data is included. Keep inactive until independently implemented.",
+        "width": 1000,
+        "height": 220
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Input - configure locally": {
+      "main": [
+        [
+          {
+            "node": "Event filter - configure locally",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Event filter - configure locally": {
+      "main": [
+        [
+          {
+            "node": "Report destination - configure locally",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Ignore other events",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Report destination - configure locally": {
+      "main": [
+        [
+          {
+            "node": "Internal notification - configure locally",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {}
+}

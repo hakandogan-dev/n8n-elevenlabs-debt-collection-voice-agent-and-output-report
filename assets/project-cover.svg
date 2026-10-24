@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 380" role="img" aria-labelledby="title desc">
+<title id="title">Milan — AI Voice Agent</title><desc id="desc">Conversation design, external tools and workflow automation.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0c1428"/><stop offset="1" stop-color="#102f3d"/></linearGradient><linearGradient id="accent"><stop stop-color="#65e5d0"/><stop offset="1" stop-color="#8fbaff"/></linearGradient></defs>
+<rect width="1400" height="380" rx="20" fill="#0d1c2b"/>
+<g fill="none" stroke="#285266" stroke-opacity=".5"><circle cx="1240" cy="200" r="120"/><circle cx="1240" cy="200" r="180"/><circle cx="1240" cy="200" r="240"/></g>
+<rect x="62" y="61" width="153" height="29" rx="14" fill="#183c46"/><text x="138" y="81" fill="#99e8d9" font-family="Arial,sans-serif" font-size="12" text-anchor="middle" letter-spacing="2">VOICE AI PROJECT</text>
+<text x="60" y="177" fill="#f4f8ff" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3">Milan</text>
+<text x="64" y="227" fill="#dbe7f4" font-family="Arial,sans-serif" font-size="28">AI voice agent for payment resolution</text>
+<rect x="64" y="256" width="84" height="4" rx="2" fill="#65e5d0"/>
+<text x="64" y="308" fill="#9fb7c9" font-family="Arial,sans-serif" font-size="18">ElevenLabs</text><circle cx="180" cy="302" r="3" fill="#65e5d0"/>
+<text x="199" y="308" fill="#9fb7c9" font-family="Arial,sans-serif" font-size="18">n8n</text><circle cx="250" cy="302" r="3" fill="#65e5d0"/>
+<text x="269" y="308" fill="#9fb7c9" font-family="Arial,sans-serif" font-size="18">Conversation orchestration</text>
+<g stroke="#65e5d0" stroke-width="7" stroke-linecap="round"><path d="M1135 178v44 M1157 151v98 M1179 126v148 M1201 164v72 M1223 143v114 M1245 179v42 M1267 160v80 M1289 184v32"/></g>
+<text x="1325" y="338" fill="#79a1b7" font-family="Arial,sans-serif" font-size="12" text-anchor="end" letter-spacing="2">PUBLIC PORTFOLIO EDITION</text>
+</svg>

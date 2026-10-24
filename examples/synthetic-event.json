@@ -1,0 +1,5 @@
+{
+  "type": "demo.call.completed",
+  "call_id": "demo-call-001",
+  "description": "Invented offline fixture. This is not a platform webhook payload."
+}

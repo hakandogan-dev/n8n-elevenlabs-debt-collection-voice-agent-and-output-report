@@ -1,0 +1,80 @@
+{
+  "name": "PUBLIC SCAFFOLD - Installments from count",
+  "nodes": [
+    {
+      "id": "public-installments-by-count-input",
+      "name": "Input - configure locally",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        150
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "public-installments-by-count-logic",
+      "name": "Calculation - private implementation omitted",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        300,
+        150
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "public-installments-by-count-output",
+      "name": "Response - configure locally",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        600,
+        150
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "public-installments-by-count-note",
+      "name": "Public scaffold notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -100
+      ],
+      "parameters": {
+        "content": "## Public portfolio scaffold\nDirection: a proposed installment count leads to a calculation result.\n\nAll operational parameters are empty. Add your own input validation, calculation policy, response mapping and authentication. No production code is included. Inactive by design.",
+        "width": 850,
+        "height": 200
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Input - configure locally": {
+      "main": [
+        [
+          {
+            "node": "Calculation - private implementation omitted",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculation - private implementation omitted": {
+      "main": [
+        [
+          {
+            "node": "Response - configure locally",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {}
+}
